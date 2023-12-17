@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <link rel="stylesheet" href="./style/authorizationstyle.css" />
+  </head>
+
+  <body class="login-color">
+    <header class="header">
+      <div class="header__container wrapper">
+        <div class="header__items">
+          <div class="header__logo__wrapper">
+            <img
+              class="header__logo__image"
+              src="./img/header-icon/logo.short.jpg"
+              alt=""
+            />
+          </div>
+          <a href="index.html" class="header__logo">Будівельний магазин</a>
+        </div>
+        <div class="header__navigation">
+          <div><a class="header__link" href="product.html">Товари</a></div>
+          <a class="header__link" href="services.html">Послуги</a>
+        </div>
+        <div class="header__actions">
+          <button onclick="" class="header__button">
+            <a href="login.html">
+              <img src="./img/header-icon/header-input.png" alt="" />
+            </a>
+          </button>
+          <button onclick="" class="header__button">
+            <a href="basket.html">
+              <img src="./img/header-icon/cart.png" alt="" />
+            </a>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="registration-form">
+      <form>
+        <h3 class="text-center">Форма входу</h3>
+        <div class="form-group">
+          <input
+            class="form-control item"
+            type="text"
+            name="username"
+            maxlength="15"
+            minlength="4"
+            pattern="^[a-zA-Z0-9_.-]*$"
+            id="username"
+            placeholder="Логін"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            class="form-control item"
+            type="password"
+            name="Пароль"
+            minlength="6"
+            id="password"
+            placeholder="Пароль"
+            required
+          />
+        </div>
+        <input type="checkbox" id="remember" name="remember" />
+        <label for="remember">Запам'ятати мене</label>
+
+        <div class="form-group">
+          <button
+            class="btn btn-primary btn-block create-account"
+            type="submit"
+          >
+            Увійти в аккаунт
+          </button>
+
+          <p class="text-center">
+            <a href="registration.html">Зареєструватись</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <img src="./img/header-icon/logo.short.jpg" alt="" />
+      </div>
+      <div class="footer__title">Будівельний Магазин</div>
+      <div class="footer__items">
+        <a class="footer__contact" href="#">Contact with us</a>
+        <div class="footer__line"></div>
+        <a class="footer__info" href="#">buildMaterial@gmail.com</a>
+      </div>
+      <div class="footer__copyright">Copyright &#169; 2023</div>
+    </footer>
+  </body>
+</html>
